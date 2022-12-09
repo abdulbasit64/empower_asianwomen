@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700;900&display=swap');
-
 :root {
   font-family: 'Source Serif Pro', serif;
+  background-color: #fcf5eb;
 }
 /*
   1. Use a more-intuitive box-sizing model.
