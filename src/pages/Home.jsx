@@ -5,8 +5,8 @@ import { pinkShade, white } from '../constants/colors';
 function Home() {
   return (
     <div>
-      <section>
-        <h1 className='text-5xl font-semibold my-5' lang='en'>
+      <section className='items-center lg:items-start'>
+        <h1 className='font-semibold my-5 text-4xl sm:text-5xl md:text-6xl lg:text-7xl' lang='en'>
           Empowering Asian Women
         </h1>
         <p id='intro' className='my-12'>
