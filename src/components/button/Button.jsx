@@ -8,7 +8,7 @@ function Button({text, to, bg, color, btnStyle}) {
         className={[`rounded-full  px-7 ${btnStyle=='wide' ? 'py-2 px-16' : 'py-4'} m-2 w-fit`, Styles.btn].join(' ')}
         style={{ backgroundColor: bg, paddingTop: btnStyle }}>
         <p
-          className={`text-base ${btnStyle=='wide' ? 'font-semibold' : 'font-normal'} uppercase`}
+          className={`text-base ${btnStyle=='wide' ? 'font-semibold' : 'font-normal'} uppercase whitespace-nowrap`}
           style={{ fontFamily: 'Arial', color: color }}>
           {text}
         </p>
