@@ -1,20 +1,17 @@
 #root {
-  max-width: 1280px;
+  width: min(100% - 2rem, 1280px);
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 3rem 0;
   text-align: center;
 }
 
-
-*{
-  /* background-color: rgba(28, 209, 241, 0.15); */
-
+.full-width{
+  min-width: 100vw;
+  margin-inline-start: 50%;
+  transform: translateX(-50%);
 }
 
 section{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  /* height: 100vh; */
 }

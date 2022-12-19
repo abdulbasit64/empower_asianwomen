@@ -21,12 +21,9 @@
 * {
   margin: 0;
 }
-/*
-	3. Allow percentage-based heights in the application
-  */
 html,
 body {
-  height: 100%;
+  overflow-x: hidden;
 }
 /*
 	Typographic tweaks!
