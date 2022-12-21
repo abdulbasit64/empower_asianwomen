@@ -26,6 +26,16 @@ import {
   whatWeDo,
   whatWeDoDesc,
 } from '../constants/content';
+import coreM1 from '../assets/images/coreM1.webp'
+import coreM2 from '../assets/images/coreM2.webp'
+import card1 from '../assets/images/card1.png'
+import card2 from '../assets/images/card2.png'
+import card3 from '../assets/images/card3.png'
+import card4 from '../assets/images/card4.png'
+import card5 from '../assets/images/card5.png'
+import aboutUsImg from '../assets/images/51lg.png'
+import igLogo from '../assets/images/ig-logo.png'
+import twitterLogo from '../assets/images/twitter-logo.png'
 
 function Home() {
   return (
@@ -51,7 +61,7 @@ function Home() {
           </div>
           <div className='flex flex-1'>
             <img
-              src='src\assets\images\51lg.png'
+              src={aboutUsImg}
               className='object-cover'
               alt='about_us_photo'
             />
@@ -63,7 +73,7 @@ function Home() {
         <p className='my-8 mt-10 text-lg sm:text-xl'>{whatWeDoDesc}</p>
         <div className='flex flex-col justify-between lg:flex-row items-center gap-10 lg:gap-32 basis-8 mt-4'>
           <Card
-            imageSrc='src\assets\images\card1.png'
+            imageSrc={card1}
             size='small'
             rounded={true}
             text='Learn More'
@@ -71,7 +81,7 @@ function Home() {
             key={researchAndPlanning}
           />
           <Card
-            imageSrc='src\assets\images\card2.png'
+            imageSrc={card2}
             size='small'
             rounded={true}
             text='Learn More'
@@ -79,7 +89,7 @@ function Home() {
             key={contentOrBlog}
           />
           <Card
-            imageSrc='src\assets\images\card3.png'
+            imageSrc={card3}
             size='small'
             rounded={true}
             text='Learn More'
@@ -95,7 +105,7 @@ function Home() {
           {/* Member 1 */}
           <div className='flex flex-col items-center w-72 mb-6'>
             <img
-              src='src\assets\images\coreM1.webp'
+              src={coreM1}
               className='object-cover rounded-full mb-4 w-40 lg:mb-8 lg:w-48'
               alt='core_team_member_1'
             />
@@ -113,7 +123,7 @@ function Home() {
           {/* Member 2 */}
           <div className='flex flex-col items-center w-72 mb-6'>
             <img
-              src='src\assets\images\coreM2.webp'
+              src={coreM2}
               className='object-cover rounded-full mt-4 mb-4 w-40 lg:mb-8 lg:w-48 lg:mt-0'
               alt='core_team_member_1'
             />
@@ -135,14 +145,14 @@ function Home() {
         <Heading title={ourWork} alwaysCenter={true} />
         <div className='flex flex-col justify-evenly lg:flex-row items-center gap-9 my-6 mt-10'>
           <Card
-            imageSrc='src\assets\images\card4.png'
+            imageSrc={card4}
             rounded={true}
             font={'inherit'}
             title={researchAreas}
             key={researchAreas}
           />
           <Card
-            imageSrc='src\assets\images\card5.png'
+            imageSrc={card5}
             rounded={true}
             font={'inherit'}
             title={seminars}
@@ -156,7 +166,7 @@ function Home() {
         <div className='flex flex-col lg:flex-row justify-center items-center gap-10 basis-8 mt-10'>
           <div className='max-w-xs'>
             <Card
-              imageSrc='src\assets\images\card4.png'
+              imageSrc={card4}
               size={'small'}
               font={'inherit'}
               title={newsCard1}
@@ -166,7 +176,7 @@ function Home() {
           </div>
           <div className='max-w-xs'>
             <Card
-              imageSrc='src\assets\images\card4.png'
+              imageSrc={card4}
               size={'small'}
               font={'inherit'}
               title={newsCard2}
@@ -176,7 +186,7 @@ function Home() {
           </div>
           <div className='max-w-xs'>
             <Card
-              imageSrc='src\assets\images\card4.png'
+              imageSrc={card4}
               size={'small'}
               font={'inherit'}
               title={newsCard3}
@@ -202,7 +212,7 @@ function Home() {
               <img
                 className='mr-2'
                 width='24'
-                src='src\assets\images\ig-logo.png'
+                src={igLogo}
                 alt='instagram_logo'
               />
               <a
@@ -216,7 +226,7 @@ function Home() {
               <img
                 className='mr-2'
                 width='24'
-                src='src\assets\images\twitter-logo.png'
+                src={twitterLogo}
                 alt='twitter_logo'
               />
               <a
