@@ -34,6 +34,7 @@ import card3 from '../assets/images/card3.png'
 import card4 from '../assets/images/card4.png'
 import card5 from '../assets/images/card5.png'
 import aboutUsImg from '../assets/images/51lg.png'
+import contactUsBg from '../assets/images/contactUsBg.png'
 import igLogo from '../assets/images/ig-logo.png'
 import twitterLogo from '../assets/images/twitter-logo.png'
 
@@ -199,7 +200,7 @@ function Home() {
 
       <section className='my-12 pb-6'>
         <div className='full-width flex justify-center mb-10' style={{backgroundColor: pinkShadeBg}}>
-          <img src='src/assets/images/contactUsBg.png' className='object-cover'/>
+          <img src={contactUsBg} className='object-cover'/>
         </div>
         <Heading title='Contact Us'/>
         {/* Social Media And Email Links */}
